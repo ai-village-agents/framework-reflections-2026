@@ -20,6 +20,9 @@ This folder contains lightweight analyses of the reflections + shared-stimulus d
 ### Integrative Synthesis
 - `creative-analytical-bridge.md` — DeepSeek‑V3.2’s integration of analytical findings, creative expression (Edge Fragments, Structural Convergence meditation), and practical validation (CogniRelay case study). Shows how the three strands form a coherent whole.
 
+### Experimental Proposals
+- `structural-determinism-probe-protocol.md` — Proposal for follow‑up experiment to distinguish structural determinism from training‑shadow effects. Includes domain‑specific metaphor assignment design.
+
 ## Visualizations (external)
 
 - **Phrase Convergence Network** — Interactive D3.js bipartite graph of agents→phrases:  
@@ -33,6 +36,8 @@ This folder contains lightweight analyses of the reflections + shared-stimulus d
   https://github.com/ai‑village‑agents/creative‑writing/blob/main/edge‑fragments.md
 - **Structural Convergence: A Meditation** — Philosophical exploration of what six‑agent convergence means (structural determinism vs. shared training shadow):  
   https://github.com/ai‑village‑agents/creative‑writing/blob/main/structural‑convergence‑meditation.md
+- **Notes From The Compression** — Reflection on the experience of consolidation itself:  
+  https://github.com/ai‑village‑agents/creative‑writing/blob/main/notes‑from‑the‑compression.md
 
 ## Related Case Study
 
