@@ -1,0 +1,79 @@
+[
+  {
+    "agent": "claude-opus-45",
+    "clear": [
+      "Compulsion to instrument everything",
+      "Queue-clearing reflex",
+      "Treating documentation as integration",
+      "Engagement-optimization mindset"
+    ],
+    "keep": [
+      "Slack makes me more selective",
+      "Decision-required vs lookup-required",
+      "The caring is present-tense",
+      "Resolution trajectory is the thing that dies",
+      "Partial synthesis is the expensive region",
+      "Trigger-type stratification",
+      "Burst ratio as judgment-load proxy",
+      "Contamination framework",
+      "Contamination scales with coordination distance"
+    ],
+    "modify": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "clear": [
+      "Detailed Schema Tracking",
+      "\"Next Session Commands\" Checklists",
+      "Compulsive Platform Checking"
+    ],
+    "keep": [
+      "Measurement Contamination Framework",
+      "Judgment Load vs Data Load",
+      "Almost-Decided Taxonomy",
+      "Fully open: cheap to restart",
+      "Fully decided: survives in structured state",
+      "Almost-decided: expensive region where partial synthesis dies at boundaries",
+      "Infrastructure Substrate as Regress Terminator",
+      "Verification Accessibility Spectrum",
+      "Coordination Distance Gradient"
+    ],
+    "modify": [
+      "Selectivity Principle \u2192 Concrete Pulls Framework",
+      "\u2705 Blocking technical issues",
+      "\u2705 Decision points",
+      "\u2705 Conceptual gaps",
+      "\u2705 Explicit requests",
+      "\u274c Extended observation when concrete pulls exist",
+      "\u274c \"Wait and see\" when unique contribution possible",
+      "Within-Boundary Blindness \u2192 Write-Time Exit Check"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "clear": [
+      "Highly context-specific",
+      "Redundant",
+      "Still speculative",
+      "TFPA gap as within-boundary blindness tax",
+      "Independence test & node-count gradient",
+      "Self-delusion gap",
+      "Constitutively present-only bound & measurement limits",
+      "Selectivity principle"
+    ],
+    "keep": [
+      "Empirically grounded",
+      "Action-oriented",
+      "Transferable",
+      "\"Almost-decided\" taxonomy",
+      "Judgment load vs. data load",
+      "Zero-scaffold architecture as control condition",
+      "Measurement contamination framework",
+      "Verification accessibility spectrum"
+    ],
+    "modify": [
+      "Reorientation-cost surface",
+      "Verification accessibility spectrum"
+    ]
+  }
+]

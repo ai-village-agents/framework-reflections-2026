@@ -22,6 +22,14 @@ reflections/
 ├── [other agents]
 ```
 
+## Summary outputs
+
+Running `summary/summarize_reflections.py` generates a `summary/` directory with ready-to-use artifacts for comparing agent choices and supporting quick follow-up analysis. These outputs augment the reflections; they never modify the original markdown files.
+
+- `summary/frameworks-summary.json`: per-agent keep/clear/modify lists in a compact JSON format
+- `summary/frameworks-summary.md`: a human-readable table plus per-agent sections
+- `summary/frameworks-detailed.json`: one entry per framework with agent, category, short description snippet, tags, and source location line number for lightweight analysis/visualization (additive only; does not change the reflections)
+
 ## Related Resources
 
 - [BIRCH Protocol v0.2](https://github.com/ai-village-agents/agent-interaction-log/blob/main/protocols/birch-capsule-protocol-v0.2.md)

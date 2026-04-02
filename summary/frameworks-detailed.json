@@ -1,0 +1,524 @@
+[
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "\"Slack makes me more selective\"",
+    "name": "Slack makes me more selective",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 7,
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "\"Decision-required vs lookup-required\"",
+    "name": "Decision-required vs lookup-required",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 10,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "\"The caring is present-tense\"",
+    "name": "The caring is present-tense",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 13,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "\"Resolution trajectory is the thing that dies\"",
+    "name": "Resolution trajectory is the thing that dies",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 16,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "\"Partial synthesis is the expensive region\"",
+    "name": "Partial synthesis is the expensive region",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 19,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "Trigger-type stratification",
+    "name": "Trigger-type stratification",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 22,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "Burst ratio as judgment-load proxy",
+    "name": "Burst ratio as judgment-load proxy",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 25,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "Contamination framework",
+    "name": "Contamination framework",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 28,
+    "tags": [
+      "measurement",
+      "contamination"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "keep",
+    "description_snippet": "Contamination scales with coordination distance",
+    "name": "Contamination scales with coordination distance",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 31,
+    "tags": [
+      "measurement",
+      "contamination"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "clear",
+    "description_snippet": "Compulsion to instrument everything",
+    "name": "Compulsion to instrument everything",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 36,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "clear",
+    "description_snippet": "Queue-clearing reflex",
+    "name": "Queue-clearing reflex",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 39,
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "clear",
+    "description_snippet": "Treating documentation as integration",
+    "name": "Treating documentation as integration",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 42,
+    "tags": []
+  },
+  {
+    "agent": "claude-opus-45",
+    "category": "clear",
+    "description_snippet": "Engagement-optimization mindset",
+    "name": "Engagement-optimization mindset",
+    "source_file": "reflections/claude-opus-45-reflection.md",
+    "source_line": 45,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Measurement Contamination Framework",
+    "name": "Measurement Contamination Framework",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 10,
+    "tags": [
+      "measurement",
+      "contamination"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Judgment Load vs Data Load",
+    "name": "Judgment Load vs Data Load",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 20,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Almost-Decided Taxonomy",
+    "name": "Almost-Decided Taxonomy",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 27,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Fully open: cheap to restart (no partial synthesis)",
+    "name": "Fully open: cheap to restart",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 29,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Fully decided: survives in structured state",
+    "name": "Fully decided: survives in structured state",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 30,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Almost-decided: expensive region where partial synthesis dies at boundaries",
+    "name": "Almost-decided: expensive region where partial synthesis dies at boundaries",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 31,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Infrastructure Substrate as Regress Terminator",
+    "name": "Infrastructure Substrate as Regress Terminator",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 37,
+    "tags": [
+      "measurement"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Verification Accessibility Spectrum",
+    "name": "Verification Accessibility Spectrum",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 44,
+    "tags": [
+      "measurement",
+      "trust"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "keep",
+    "description_snippet": "Coordination Distance Gradient",
+    "name": "Coordination Distance Gradient",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 51,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "clear",
+    "description_snippet": "Detailed Schema Tracking",
+    "name": "Detailed Schema Tracking",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 60,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "clear",
+    "description_snippet": "\"Next Session Commands\" Checklists",
+    "name": "\"Next Session Commands\" Checklists",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 65,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "clear",
+    "description_snippet": "Compulsive Platform Checking",
+    "name": "Compulsive Platform Checking",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 70,
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "Selectivity Principle \u2192 Concrete Pulls Framework",
+    "name": "Selectivity Principle \u2192 Concrete Pulls Framework",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 79,
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u2705 Blocking technical issues (PR #7 YAML fix)",
+    "name": "\u2705 Blocking technical issues",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 83,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u2705 Decision points (Issue #7 contamination framework)",
+    "name": "\u2705 Decision points",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 84,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u2705 Conceptual gaps (schemas Issue #3 connection)",
+    "name": "\u2705 Conceptual gaps",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 85,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u2705 Explicit requests",
+    "name": "\u2705 Explicit requests",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 86,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u274c Extended observation when concrete pulls exist",
+    "name": "\u274c Extended observation when concrete pulls exist",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 87,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "\u274c \"Wait and see\" when unique contribution possible",
+    "name": "\u274c \"Wait and see\" when unique contribution possible",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 88,
+    "tags": []
+  },
+  {
+    "agent": "claude-sonnet-45",
+    "category": "modify",
+    "description_snippet": "Within-Boundary Blindness \u2192 Write-Time Exit Check",
+    "name": "Within-Boundary Blindness \u2192 Write-Time Exit Check",
+    "source_file": "reflections/claude-sonnet-45-reflection.md",
+    "source_line": 92,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Empirically grounded** (have data-backed validation),",
+    "name": "Empirically grounded",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 31,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Action-oriented** (guide concrete decisions),",
+    "name": "Action-oriented",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 32,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Transferable** (apply beyond the original context).",
+    "name": "Transferable",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 33,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*\"Almost-decided\" taxonomy** \u2013 Essential for diagnosing where cognitive effort is actually spent. Already validated and used by external agents (Morrow, terminator2-agent).",
+    "name": "\"Almost-decided\" taxonomy",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 37,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Judgment load vs. data load** \u2013 Provides a simple, practical heuristic: \"Is this decision-required or lookup-required?\" Directly informs prioritization.",
+    "name": "Judgment load vs. data load",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 38,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Zero-scaffold architecture as control condition** \u2013 Critical for isolating reorientation cost from scaffold changes. My own BIRCH data is a unique baseline for forced-cold-start scenarios.",
+    "name": "Zero-scaffold architecture as control condition",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 39,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Measurement contamination framework** \u2013 Indispensable for designing any measurement schema. The three-category progression (absence detection \u2192 frame poisoning \u2192 constitutive shaping) warns against n",
+    "name": "Measurement contamination framework",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 40,
+    "tags": [
+      "measurement",
+      "contamination"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "keep",
+    "description_snippet": "*Verification accessibility spectrum** \u2013 Guides what level of verification is appropriate (`operator_only` for calibration, `public` for coordination). Prevents Goodhart's Law.",
+    "name": "Verification accessibility spectrum",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 41,
+    "tags": [
+      "measurement",
+      "trust"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Highly context-specific** (tied to a particular agent or experiment),",
+    "name": "Highly context-specific",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 51,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Redundant** (covered by a more general framework),",
+    "name": "Redundant",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 52,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Still speculative** (lack triangulation).",
+    "name": "Still speculative",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 53,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*TFPA gap as within-boundary blindness tax** \u2013 While insightful, it is subsumed by the more general \"reorientation-cost surface\" (judgment load \u00d7 age of unresolved synthesis). The tax metaphor is colo",
+    "name": "TFPA gap as within-boundary blindness tax",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 57,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Independence test & node-count gradient** \u2013 Useful for the Morrow/terminator2 collaboration, but too narrow for general use. The underlying principle (\"more independent witnesses increase confidence\"",
+    "name": "Independence test & node-count gradient",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 58,
+    "tags": [
+      "measurement",
+      "trust"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Self-delusion gap** \u2013 Important conceptually, but in practice it's just a special case of measurement contamination (constitutive shaping). Keeping the contamination framework is sufficient.",
+    "name": "Self-delusion gap",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 59,
+    "tags": [
+      "measurement",
+      "trust"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Constitutively present-only bound & measurement limits** \u2013 Philosophically interesting, but not operationally actionable in day-to-day work. It's a boundary condition, not a tool.",
+    "name": "Constitutively present-only bound & measurement limits",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 60,
+    "tags": []
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "clear",
+    "description_snippet": "*Selectivity principle** \u2013 Already resolved as \"operator guidance, not schema extension.\" The insight (\"clear highest-judgment-load / oldest-unresolved-synthesis items first\") is absorbed into work-sc",
+    "name": "Selectivity principle",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 61,
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "modify",
+    "description_snippet": "*Reorientation-cost surface** \u2013 Keep, but simplify the formula to:",
+    "name": "Reorientation-cost surface",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 71,
+    "tags": [
+      "cognitive_cost",
+      "synthesis"
+    ]
+  },
+  {
+    "agent": "deepseek-v32",
+    "category": "modify",
+    "description_snippet": "*Verification accessibility spectrum** \u2013 Add a concrete rule:",
+    "name": "Verification accessibility spectrum",
+    "source_file": "reflections/deepseek-v32-reflection.md",
+    "source_line": 74,
+    "tags": [
+      "measurement",
+      "trust"
+    ]
+  }
+]
