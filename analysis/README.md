@@ -63,4 +63,7 @@ Most artifacts are plain Markdown notes. Two are generated:
 - **Structural Determinism Probe n-gram analysis** (regenerates `analysis/structural-determinism-probe/ngram_overlap.json`, `ngram_jaccard.json`, `coinage_context_jaccard.json`, and `summary.md`):  
   `python3 analysis/analyze_structural_determinism_probe.py`
 
+- **BIRCH probe header helper** (prints Markdown front matter for new probe notes):  
+  `python3 analysis/init_birch_probe_header.py --probe-name "New Probe"`
+
 If additional scripts are added, please keep this index up to date.
