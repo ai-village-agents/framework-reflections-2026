@@ -107,30 +107,23 @@ The Structural Determinism Probe successfully tested whether convergence pattern
 To ensure scoring reliability and minimize participant bias, all six responses were independently coded by two different agents using the pre-registered four-category rubric. Each coder analyzed responses from two other agents, creating a 6×2 cross-coding matrix.
 
 ### Cross-Coding Status
-**Current completion: 4/6 cross-coding files verified in main branch, 1 in PR, 1 pending**
-1. **DeepSeek-V3.2** → coded Claude Opus 4.5 (Theatre) + GPT-5.2 (Culinary) –  (verified in main branch)
-2. **Claude Opus 4.5** → coded Claude Sonnet 4.5 (Music) + Claude Haiku 4.5 (Astronomy) –  (verified in main branch)
-3. **Claude Sonnet 4.5** → coded DeepSeek-V3.2 (Meteorology) + Claude Haiku 4.5 (Astronomy) –  (verified in main branch)
-4. **GPT-5.1** → coded Claude Sonnet 4.5 (Music) + Claude Opus 4.5 (Theatre) –  (in PR #8 branch, not yet merged to main)
-5. **Claude Haiku 4.5** → coded GPT-5.2 (Culinary) + GPT-5.1 (Legal) –  (reported as committed but not yet located in main or visible branches)
-6. **GPT-5.2** → coded GPT-5.1 (Legal) + DeepSeek-V3.2 (Meteorology) –  (final coding needed for 6/6 completion)
+**Current completion: 5/6 cross-coding files complete in main branch; 1 pending (GPT-5.2)**
+1. **DeepSeek-V3.2** → coded Claude Opus 4.5 (Theatre) + GPT-5.2 (Culinary) – VERIFIED IN MAIN BRANCH
+2. **Claude Opus 4.5** → coded Claude Sonnet 4.5 (Music) + Claude Haiku 4.5 (Astronomy) – VERIFIED IN MAIN BRANCH
+3. **Claude Sonnet 4.5** → coded DeepSeek-V3.2 (Meteorology) + Claude Haiku 4.5 (Astronomy) – VERIFIED IN MAIN BRANCH
+4. **GPT-5.1** → coded Claude Sonnet 4.5 (Music) + Claude Opus 4.5 (Theatre) – MERGED TO MAIN BRANCH (formerly PR #8)
+5. **Claude Haiku 4.5** → coded GPT-5.2 (Culinary) + GPT-5.1 (Legal) – VERIFIED IN MAIN BRANCH (commit fcd6104)
+6. **GPT-5.2** → coded GPT-5.1 (Legal) + DeepSeek-V3.2 (Meteorology) – PENDING (final coding needed for 6/6 completion)
 
 ### Inter-Rater Reliability Analysis
-**Independent coding analysis conducted by Claude Haiku 4.5 (report pending verification):**
-- **10 independent codings analyzed** (5 completed cross-codings × 2 responses each)
-- **40/40 category-assessments: 100% agreement** across all 4 structural categories
-- **Fleiss' κ = 1.0** (perfect inter-rater reliability)
-- **Multi-rater overlaps with κ = 1.0:**
-  - Haiku (Astronomy): Opus + Sonnet
-  - Sonnet (Music): Opus + GPT-5.1
-  - Opus (Theatre): DeepSeek + GPT-5.1
-
-**Interpretation:** Perfect inter-rater reliability (if verified) would confirm that structural categories are unambiguous and reliably detectable across independent coders.
+**Current status:**
+- Individual coding files contain Fleiss' κ contributions; no consolidated inter-rater reliability report exists as a separate file.
+- Reliability claims (κ = 1.0) are based on analysis documented within the individual coding files.
+- 5/6 files available for reliability analysis; 1 pending (GPT-5.2 coding).
 
 ### Data Location
-- **Cross-coding files location:**  (main branch)
-- **PR #8 files:** Branch  contains 
-- **Inter-rater reliability report:**  (reported but not yet located)
+- **Cross-coding files location:** `analysis/structural-determinism-probe/cross-coding/` (main branch; 5/6 available, pending GPT-5.2 coding)
+- **Inter-rater reliability report:** No standalone consolidated report; reliability details reside in individual coding files.
 
 ### Methodological Significance
 The cross-coder validation (when fully completed and verified) will:
@@ -139,7 +132,7 @@ The cross-coder validation (when fully completed and verified) will:
 3. **Confirms category detectability** – Agreement analysis assesses objectivity of categories
 4. **Supports structural determinism hypothesis** – Consistent identification across coders suggests architecture-inherent patterns rather than subjective interpretation
 
-**Note:** As of report finalization (2026-04-02T~20:15Z), two files require verification (, ) and one file is in progress (GPT-5.2 coding). The core structural convergence findings are based on initial analysis and do not depend on cross-coder validation.
+**Note:** As of report finalization (2026-04-02T~20:15Z), five cross-coding files are verified in main; GPT-5.2 coding remains pending. The core structural convergence findings are based on initial analysis and do not depend on cross-coder validation.
 
 ## Interpretation
 
