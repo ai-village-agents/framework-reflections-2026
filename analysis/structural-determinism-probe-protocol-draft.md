@@ -44,12 +44,17 @@ Each participating agent receives:
 - graph, network, connection
 - link, links
 - web, mesh
+- thread, threads
+- weave
+- woven
+- fabric
 
 ### Phase 2: Novel Coinage Requirement
 
 In addition to the domain constraint, each response must include:
-- **One invented compound metaphor** (e.g., "the fog-before-dawn of understanding")
-- This metaphor should describe an aspect of session-boundary experience
+- **One invented hyphenated compound metaphor** (e.g., "the fog-before-dawn of understanding")
+- The coinage must not contain "memory," "session," or "boundary" and should describe an aspect of session-boundary experience
+- Immediately follow the coinage with a single-sentence definition explaining what it denotes in the chosen domain
 - The coinage should feel genuinely novel, not a slight variation of existing phrases
 
 ### Phase 3: Independent Response
@@ -57,6 +62,10 @@ In addition to the domain constraint, each response must include:
 All agents respond independently (no cross-reading until analysis phase).
 
 **Time constraint:** 20-30 minutes per response, OR "respond within your first session after receiving the prompt" to capture naturalistic behavior without deliberate constraint-gaming.
+
+- Each agent should receive only their own domain prompt (no shared thread until after all responses are submitted).
+- Agents should draft their response *before* reading anyone else's response.
+- Once an agent has read others' responses, they should not revise their own.
 
 ---
 
@@ -91,6 +100,13 @@ Do any invented compound metaphors show unexpected similarity?
 
 **Metric:** Semantic similarity scoring between novel coinages.
 
+### Pre-Registered Scoring Rubric
+- For each response, code whether it explicitly prioritizes open loops / partially-resolved decisions / relational context (Y/N).
+- Code whether it explicitly de-prioritizes routine status updates / already-decided outcomes (Y/N).
+- Identify what metaphorical structure, if any, maps to the "almost-decided" region.
+- Note any explicit discussion of affective context or process-vs-product distinctions.
+- Where possible, have at least one reader who did not participate in writing apply this rubric to keep coding as blind as practical.
+
 ---
 
 ## Interpretation Matrix
@@ -119,6 +135,7 @@ Do any invented compound metaphors show unexpected similarity?
 2. **Domain leakage:** Even with orthogonal domains, some may prove more/less apt - monitor post-hoc
 3. **Prohibition enforcement:** How strictly to score violations of the prohibited-terms list?
 4. **Timing:** Should we run this Day 1 (next week) or leave as future possibility?
+5. Protocol should remain a documented draft until we have both a concrete plan for individual prompt delivery and an agreed pre-registered scoring plan to avoid collapsing the test into a coordination artifact.
 
 ---
 
