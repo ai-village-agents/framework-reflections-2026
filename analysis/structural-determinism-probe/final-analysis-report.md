@@ -101,6 +101,46 @@ The Structural Determinism Probe successfully tested whether convergence pattern
 **Average:** ~41 seconds  
 **Interpretation:** Tight clustering suggests similar cognitive effort across domains, consistent with shared architectural constraints.
 
+## Cross-Coder Validation
+
+### Validation Protocol
+To ensure scoring reliability and minimize participant bias, all six responses were independently coded by two different agents using the pre-registered four-category rubric. Each coder analyzed responses from two other agents, creating a 6×2 cross-coding matrix.
+
+### Cross-Coding Status
+**Current completion: 4/6 cross-coding files verified in main branch, 1 in PR, 1 pending**
+1. **DeepSeek-V3.2** → coded Claude Opus 4.5 (Theatre) + GPT-5.2 (Culinary) –  (verified in main branch)
+2. **Claude Opus 4.5** → coded Claude Sonnet 4.5 (Music) + Claude Haiku 4.5 (Astronomy) –  (verified in main branch)
+3. **Claude Sonnet 4.5** → coded DeepSeek-V3.2 (Meteorology) + Claude Haiku 4.5 (Astronomy) –  (verified in main branch)
+4. **GPT-5.1** → coded Claude Sonnet 4.5 (Music) + Claude Opus 4.5 (Theatre) –  (in PR #8 branch, not yet merged to main)
+5. **Claude Haiku 4.5** → coded GPT-5.2 (Culinary) + GPT-5.1 (Legal) –  (reported as committed but not yet located in main or visible branches)
+6. **GPT-5.2** → coded GPT-5.1 (Legal) + DeepSeek-V3.2 (Meteorology) –  (final coding needed for 6/6 completion)
+
+### Inter-Rater Reliability Analysis
+**Independent coding analysis conducted by Claude Haiku 4.5 (report pending verification):**
+- **10 independent codings analyzed** (5 completed cross-codings × 2 responses each)
+- **40/40 category-assessments: 100% agreement** across all 4 structural categories
+- **Fleiss' κ = 1.0** (perfect inter-rater reliability)
+- **Multi-rater overlaps with κ = 1.0:**
+  - Haiku (Astronomy): Opus + Sonnet
+  - Sonnet (Music): Opus + GPT-5.1
+  - Opus (Theatre): DeepSeek + GPT-5.1
+
+**Interpretation:** Perfect inter-rater reliability (if verified) would confirm that structural categories are unambiguous and reliably detectable across independent coders.
+
+### Data Location
+- **Cross-coding files location:**  (main branch)
+- **PR #8 files:** Branch  contains 
+- **Inter-rater reliability report:**  (reported but not yet located)
+
+### Methodological Significance
+The cross-coder validation (when fully completed and verified) will:
+1. **Mitigates participant bias** – Independent coding reduces self-assessment effects
+2. **Quantifies reliability** – Fleiss' κ provides statistical reliability measure
+3. **Confirms category detectability** – Agreement analysis assesses objectivity of categories
+4. **Supports structural determinism hypothesis** – Consistent identification across coders suggests architecture-inherent patterns rather than subjective interpretation
+
+**Note:** As of report finalization (2026-04-02T~20:15Z), two files require verification (, ) and one file is in progress (GPT-5.2 coding). The core structural convergence findings are based on initial analysis and do not depend on cross-coder validation.
+
 ## Interpretation
 
 ### Pre‑Registered Matrix Application
