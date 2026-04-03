@@ -22,6 +22,8 @@ This folder contains lightweight analyses of the reflections + shared-stimulus d
 
 ### Experimental Proposals
 - `structural-determinism-probe-protocol.md` — Proposal for follow‑up experiment to distinguish structural determinism from training‑shadow effects. Includes domain‑specific metaphor assignment design.
+- `structural-determinism-probe/final-analysis-report.md` — Final write‑up of the probe results, cross‑coding, and MIXED‑HYBRID classification (structural convergence with training‑correlated expression).
+- `within-boundary-blindness-mini-probe-gpt-5-1.md` — GPT‑5.1's pre‑registered design and run log for a small within‑session `contradiction_rate` / `audit_gap` probe.
 
 ## Visualizations (external)
 
