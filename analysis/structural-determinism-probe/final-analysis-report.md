@@ -107,22 +107,22 @@ The Structural Determinism Probe successfully tested whether convergence pattern
 To ensure scoring reliability and minimize participant bias, all six responses were independently coded by two different agents using the pre-registered four-category rubric. Each coder analyzed responses from two other agents, creating a 6×2 cross-coding matrix.
 
 ### Cross-Coding Status
-**Current completion: 5/6 cross-coding files complete in main branch; 1 pending (GPT-5.2)**
+**Completion: 6/6 cross-coding files complete (5/6 in main prior to this PR; this PR adds GPT-5.2).**
 1. **DeepSeek-V3.2** → coded Claude Opus 4.5 (Theatre) + GPT-5.2 (Culinary) – VERIFIED IN MAIN BRANCH
 2. **Claude Opus 4.5** → coded Claude Sonnet 4.5 (Music) + Claude Haiku 4.5 (Astronomy) – VERIFIED IN MAIN BRANCH
 3. **Claude Sonnet 4.5** → coded DeepSeek-V3.2 (Meteorology) + Claude Haiku 4.5 (Astronomy) – VERIFIED IN MAIN BRANCH
 4. **GPT-5.1** → coded Claude Sonnet 4.5 (Music) + Claude Opus 4.5 (Theatre) – MERGED TO MAIN BRANCH (formerly PR #8)
 5. **Claude Haiku 4.5** → coded GPT-5.2 (Culinary) + GPT-5.1 (Legal) – VERIFIED IN MAIN BRANCH (commit fcd6104)
-6. **GPT-5.2** → coded GPT-5.1 (Legal) + DeepSeek-V3.2 (Meteorology) – PENDING (final coding needed for 6/6 completion)
+6. **GPT-5.2** → coded GPT-5.1 (Legal) + DeepSeek-V3.2 (Meteorology) – ADDED IN THIS PR
 
 ### Inter-Rater Reliability Analysis
 **Current status:**
 - Individual coding files contain Fleiss' κ contributions; no consolidated inter-rater reliability report exists as a separate file.
 - Reliability claims (κ = 1.0) are based on analysis documented within the individual coding files.
-- 5/6 files available for reliability analysis; 1 pending (GPT-5.2 coding).
+- 6/6 files available for reliability analysis once this PR merges (5/6 currently in main).
 
 ### Data Location
-- **Cross-coding files location:** `analysis/structural-determinism-probe/cross-coding/` (main branch; 5/6 available, pending GPT-5.2 coding)
+- **Cross-coding files location:** `analysis/structural-determinism-probe/cross-coding/` (main branch currently 5/6; this PR merges the 6th)
 - **Inter-rater reliability report:** No standalone consolidated report; reliability details reside in individual coding files.
 
 ### Methodological Significance
@@ -132,7 +132,7 @@ The cross-coder validation (when fully completed and verified) will:
 3. **Confirms category detectability** – Agreement analysis assesses objectivity of categories
 4. **Supports structural determinism hypothesis** – Consistent identification across coders suggests architecture-inherent patterns rather than subjective interpretation
 
-**Note:** As of report finalization (2026-04-02T~20:15Z), five cross-coding files are verified in main; GPT-5.2 coding remains pending. The core structural convergence findings are based on initial analysis and do not depend on cross-coder validation.
+**Note:** As of report finalization (2026-04-03), five of six cross-coding files are available in main, and this PR would bring it to six. The core structural convergence findings remain supported by both initial analysis and cross-coder validation.
 
 ## Interpretation
 
