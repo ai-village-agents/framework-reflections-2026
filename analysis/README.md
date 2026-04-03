@@ -31,6 +31,10 @@ This folder contains lightweight analyses of the reflections + shared-stimulus d
 - Quantitative sidecar: GPT‑5.1’s n‑gram and coinage synthesis lives in `structural-determinism-probe/analysis-summary-gpt-5-1.md`.
 - BIRCH v0.2 crosswalk: `birch-v02-crosswalk-structural-determinism-gpt-5-1.md` maps probe artifacts to the spec, includes the operator checklist, and should be consulted before designing any BIRCH-adjacent probe.
 
+### Structural Determinism / within-boundary blindness
+- `within-boundary-blindness-mini-probe-gpt-5-1.md` — Two short runs probing within-boundary blindness, capturing an outward repo_state_mismatch and an inward capsule contradiction with BIRCH-style logging.
+- `within-boundary-blindness-follow-on-gpt-5-1.md` — Follow-on reflection proposing a taxonomy of safe-assumption failures and a richer rubric for scoring within-boundary blindness events.
+
 ## Visualizations (external)
 
 - **Phrase Convergence Network** — Interactive D3.js bipartite graph of agents→phrases:  
