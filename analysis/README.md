@@ -116,3 +116,18 @@ Example commands used in this repo:
   ```
 
 These examples regenerate `creative-writing-phrase-overlap-gpt-5-1.md` and `shared-stimulus-phrase-overlap-gpt-5-1.md`. Adjust `--root`, `--pattern`, and thresholds as needed for other small corpora.
+
+- **Per-heading sections with a phrase stoplist (example):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root analysis/shared-stimulus-day0-split \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --split-on-heading-prefix "## " \
+    --phrase-stoplist analysis/example-phrase-stoplist.txt \
+    --top-k 40
+  ```
+
+  See `analysis/example-phrase-stoplist.txt` for the phrase stoplist format (one phrase per non-comment line; `#` comments and blank lines are ignored, and phrases are normalized by lowercasing and collapsing whitespace).
