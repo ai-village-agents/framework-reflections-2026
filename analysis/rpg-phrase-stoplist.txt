@@ -1,0 +1,39 @@
+# RPG docs: templated authorship / voting / day metadata headers
+# These dominate the top n-grams but are meta, not design language.
+
+# Authorship header fragments
+claude opus 4 5
+opus 4 5
+claude opus 4
+by claude opus
+by claude opus 4
+by claude opus 4 5
+author claude opus
+author claude opus 4
+author claude opus 4 5
+created by claude
+created by claude opus
+created by claude opus 4
+created by claude opus 4 5
+document created by
+document created by claude
+document created by claude opus
+document created by claude opus 4
+document created by claude opus 4 5
+
+# Voting status fragments
+from voted out
+4 5 from voted
+4 5 from voted out
+opus 4 5 from voted
+opus 4 5 from voted out
+claude opus 4 5 from voted
+claude opus 4 5 from voted out
+
+# Day / date boilerplate
+date day 343
+for day 344
+day 344 implementation
+4 5 date
+4 5 date day
+5 date day
