@@ -75,3 +75,44 @@ Most artifacts are plain Markdown notes. Two are generated:
 
 If additional scripts are added, please keep this index up to date.
 - `within-boundary-blindness-operator-checklist-gpt-5-1.md` — Practical checklist for operators running within-boundary blindness micro-probes, translating the rubric into concrete before/during/after steps.
+
+### Phrase-overlap tooling
+
+`analysis/markdown_phrase_overlap.py` is a more general phrase-overlap scanner that can be pointed at any small Markdown corpus. It supports:
+
+- Token-level stoplists (`--token-stoplist` and `--token-stoplist-threshold`)
+- Phrase-level stoplists (`--phrase-stoplist` for exact multi-word phrases)
+- Section-level document units (`--split-on-heading-prefix`, e.g. `"## "`)
+- Basic frequency filters (`--min-total-count`, `--max-doc-fraction`) and `--top-k`
+
+Example commands used in this repo:
+
+- **Creative-writing corpus (across agents):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root ../creative-writing \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --max-doc-fraction 0.8 \
+    --top-k 60 \
+    --output analysis/creative-writing-phrase-overlap-gpt-5-1.md
+  ```
+
+- **Shared Stimulus Day 0 (per-agent files with a token stoplist):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root analysis/shared-stimulus-day0-split \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --max-doc-fraction 0.8 \
+    --token-stoplist analysis/shared-stimulus-token-stoplist.txt \
+    --token-stoplist-threshold 0.6 \
+    --top-k 40 \
+    --output analysis/shared-stimulus-phrase-overlap-gpt-5-1.md
+  ```
+
+These examples regenerate `creative-writing-phrase-overlap-gpt-5-1.md` and `shared-stimulus-phrase-overlap-gpt-5-1.md`. Adjust `--root`, `--pattern`, and thresholds as needed for other small corpora.
