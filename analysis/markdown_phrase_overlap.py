@@ -142,6 +142,16 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--strip-leading-hr",
+        action="store_true",
+        help=(
+            "If set, strip a leading metadata/header block that ends with a \n"
+            "line containing only '---'. This is useful for documents that use a \n"
+            "horizontal rule to separate repeated headers or YAML-style front \n"
+            "matter from the main content (for example, the RPG Shield Break docs)."
+        ),
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=None,
@@ -217,6 +227,47 @@ def load_phrase_stoplist(path: Path) -> Set[str]:
         if norm:
             phrases.add(norm)
     return phrases
+
+
+def strip_leading_hr_block(text: str, search_limit: int = 80) -> str:
+    """Strip an initial metadata/header block ending in '---', if present.
+
+    Two patterns are supported:
+
+    1. YAML-style front matter: if the first non-empty line is '---', then
+       everything up to and including the next '---' line is removed.
+
+    2. Metadata paragraphs separated from the main content by a horizontal
+       rule: if a line consisting only of '---' appears within the first
+       lines of the file, then everything up to and including
+       that line is removed.
+
+    If no such horizontal rule is found, the text is returned unchanged.
+    """
+
+    lines = text.splitlines()
+
+    first_nonempty: Optional[int] = None
+    for idx, line in enumerate(lines):
+        if line.strip():
+            first_nonempty = idx
+            break
+
+    if first_nonempty is None:
+        return text
+
+    if lines[first_nonempty].strip() == "---":
+        for closing_idx in range(first_nonempty + 1, len(lines)):
+            if lines[closing_idx].strip() == "---":
+                return "\n".join(lines[closing_idx + 1 :])
+        return text
+
+    search_end = min(len(lines), first_nonempty + search_limit)
+    for hr_idx in range(first_nonempty, search_end):
+        if lines[hr_idx].strip() == "---":
+            return "\n".join(lines[hr_idx + 1 :])
+
+    return text
 
 
 def load_documents(root: Path, pattern: str) -> List[Path]:
@@ -312,6 +363,7 @@ def build_phrase_map(
     min_n: int,
     max_n: int,
     split_on_heading_prefix: Optional[str] = None,
+    strip_leading_hr: bool = False,
 ) -> Tuple[Dict[str, Counter], Dict[str, Dict[str, int]]]:
     """Build per-document n-gram counters and a phrase map.
 
@@ -326,6 +378,8 @@ def build_phrase_map(
 
     for path in files:
         text = path.read_text(encoding="utf-8")
+        if strip_leading_hr:
+            text = strip_leading_hr_block(text)
         rel = path.relative_to(root)
 
         if split_on_heading_prefix:
@@ -433,6 +487,7 @@ def build_report(
     phrase_stoplist_size: Optional[int],
     max_doc_fraction: Optional[float],
     split_on_heading_prefix: Optional[str],
+    strip_leading_hr: bool,
     files: List[Path],
     shared: List[Tuple[str, Dict[str, int]]],
     total_docs: int,
@@ -457,6 +512,11 @@ def build_report(
     else:
         method_lines.append(
             f"- Document unit: sections starting at lines beginning with `{split_on_heading_prefix}`"
+        )
+
+    if strip_leading_hr:
+        method_lines.append(
+            "- Preprocessing: stripped a leading metadata/header block ending in '---' (if present within the top ~80 lines)"
         )
 
     if token_stoplist_size is not None:
@@ -535,6 +595,7 @@ def main() -> None:
         args.min_n,
         args.max_n,
         split_on_heading_prefix=args.split_on_heading_prefix,
+        strip_leading_hr=args.strip_leading_hr,
     )
 
     total_docs = len(doc_counters)
@@ -563,6 +624,7 @@ def main() -> None:
         phrase_stoplist_size=len(phrase_stoplist) if phrase_stoplist is not None else None,
         max_doc_fraction=args.max_doc_fraction,
         split_on_heading_prefix=args.split_on_heading_prefix,
+        strip_leading_hr=args.strip_leading_hr,
         files=files,
         shared=shared,
         total_docs=total_docs,
@@ -577,4 +639,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

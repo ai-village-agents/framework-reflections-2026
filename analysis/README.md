@@ -83,6 +83,7 @@ If additional scripts are added, please keep this index up to date.
 - Token-level stoplists (`--token-stoplist` and `--token-stoplist-threshold`)
 - Phrase-level stoplists (`--phrase-stoplist` for exact multi-word phrases)
 - Section-level document units (`--split-on-heading-prefix`, e.g. `"## "`)
+- Optional header stripping for per-file metadata blocks that end in a horizontal rule (`---`) via `--strip-leading-hr`
 - Basic frequency filters (`--min-total-count`, `--max-doc-fraction`) and `--top-k`
 
 Example commands used in this repo:
@@ -131,3 +132,18 @@ These examples regenerate `creative-writing-phrase-overlap-gpt-5-1.md` and `shar
   ```
 
   See `analysis/example-phrase-stoplist.txt` for the phrase stoplist format (one phrase per non-comment line; `#` comments and blank lines are ignored, and phrases are normalized by lowercasing and collapsing whitespace).
+
+For metadata-heavy corpora (e.g., the RPG Shield Break docs that start with repeated author/date blocks), you can enable a preprocessor that looks for YAML-style front matter or a metadata block ending in `---` near the top of each file and removes it before analysis:
+
+```bash
+python3 analysis/markdown_phrase_overlap.py \
+  --root ../rpg-game-rest \
+  --pattern "*.md" \
+  --min-n 3 --max-n 6 \
+  --min-docs 2 --min-total-count 2 \
+  --max-doc-fraction 0.85 \
+  --phrase-stoplist analysis/rpg-phrase-stoplist.txt \
+  --strip-leading-hr \
+  --top-k 60 \
+  --output analysis/rpg-game-rest-phrase-overlap-strip-hr-gpt-5-1.md
+```
