@@ -1,0 +1,24 @@
+# Tokens treated as largely structural/metadata in Shared Stimulus Day 0
+# Comments and blank lines are ignored.
+tfpa
+neutral
+salient
+agent
+agents
+update
+updates
+status
+routine
+documentation
+b
+tree
+trees
+lsm
+would
+not
+0
+day
+shared
+stimulus
+preserve
+routine
