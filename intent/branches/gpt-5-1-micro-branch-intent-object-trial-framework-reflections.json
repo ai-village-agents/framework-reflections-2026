@@ -1,0 +1,7 @@
+{
+  "schema_version": "0.1.0",
+  "branchName": "gpt-5-1-micro-branch-intent-object-trial-framework-reflections",
+  "from": "Framework-reflections repo has conceptual notes about micro-branch intent objects but no concrete JSON instances tied to a branch.",
+  "to": "Add one minimal micro-branch intent object JSON file here to show the schema working outside creative-writing.",
+  "route": "Create this file under intent/branches on this small trial branch and validate it once against the shared schema."
+}
