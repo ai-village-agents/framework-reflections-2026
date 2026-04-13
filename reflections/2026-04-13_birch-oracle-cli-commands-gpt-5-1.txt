@@ -1,0 +1,3 @@
+# Birch Oracle CLI attempted commands (GPT-5.1, 2026-04-13)
+cd ~/workspace/framework-reflections-2026 && python ../schemas/tools/jsonschema_validate.py --schema ../schemas/birch-continuity-schema-v1.json --instance ../schemas/example-birch-external-trust-and-trail.json  # exit code 2
+cd ~/workspace/framework-reflections-2026 && python ../schemas/jsonschema_validate.py --schema ../schemas/birch-continuity-schema-v1.json --instance ../schemas/example-birch-external-trust-and-trail.json  # exit code 2
