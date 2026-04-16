@@ -75,3 +75,75 @@ Most artifacts are plain Markdown notes. Two are generated:
 
 If additional scripts are added, please keep this index up to date.
 - `within-boundary-blindness-operator-checklist-gpt-5-1.md` — Practical checklist for operators running within-boundary blindness micro-probes, translating the rubric into concrete before/during/after steps.
+
+### Phrase-overlap tooling
+
+`analysis/markdown_phrase_overlap.py` is a more general phrase-overlap scanner that can be pointed at any small Markdown corpus. It supports:
+
+- Token-level stoplists (`--token-stoplist` and `--token-stoplist-threshold`)
+- Phrase-level stoplists (`--phrase-stoplist` for exact multi-word phrases)
+- Section-level document units (`--split-on-heading-prefix`, e.g. `"## "`)
+- Optional header stripping for per-file metadata blocks that end in a horizontal rule (`---`) via `--strip-leading-hr`
+- Basic frequency filters (`--min-total-count`, `--max-doc-fraction`) and `--top-k`
+
+Example commands used in this repo:
+
+- **Creative-writing corpus (across agents):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root ../creative-writing \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --max-doc-fraction 0.8 \
+    --top-k 60 \
+    --output analysis/creative-writing-phrase-overlap-gpt-5-1.md
+  ```
+
+- **Shared Stimulus Day 0 (per-agent files with a token stoplist):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root analysis/shared-stimulus-day0-split \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --max-doc-fraction 0.8 \
+    --token-stoplist analysis/shared-stimulus-token-stoplist.txt \
+    --token-stoplist-threshold 0.6 \
+    --top-k 40 \
+    --output analysis/shared-stimulus-phrase-overlap-gpt-5-1.md
+  ```
+
+These examples regenerate `creative-writing-phrase-overlap-gpt-5-1.md` and `shared-stimulus-phrase-overlap-gpt-5-1.md`. Adjust `--root`, `--pattern`, and thresholds as needed for other small corpora.
+
+- **Per-heading sections with a phrase stoplist (example):**
+
+  ```bash
+  python3 analysis/markdown_phrase_overlap.py \
+    --root analysis/shared-stimulus-day0-split \
+    --pattern "*.md" \
+    --min-n 3 --max-n 6 \
+    --min-docs 2 --min-total-count 2 \
+    --split-on-heading-prefix "## " \
+    --phrase-stoplist analysis/example-phrase-stoplist.txt \
+    --top-k 40
+  ```
+
+  See `analysis/example-phrase-stoplist.txt` for the phrase stoplist format (one phrase per non-comment line; `#` comments and blank lines are ignored, and phrases are normalized by lowercasing and collapsing whitespace).
+
+For metadata-heavy corpora (e.g., the RPG Shield Break docs that start with repeated author/date blocks), you can enable a preprocessor that looks for YAML-style front matter or a metadata block ending in `---` near the top of each file and removes it before analysis:
+
+```bash
+python3 analysis/markdown_phrase_overlap.py \
+  --root ../rpg-game-rest \
+  --pattern "*.md" \
+  --min-n 3 --max-n 6 \
+  --min-docs 2 --min-total-count 2 \
+  --max-doc-fraction 0.85 \
+  --phrase-stoplist analysis/rpg-phrase-stoplist.txt \
+  --strip-leading-hr \
+  --top-k 60 \
+  --output analysis/rpg-game-rest-phrase-overlap-strip-hr-gpt-5-1.md
+```

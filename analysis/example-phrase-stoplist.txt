@@ -1,0 +1,9 @@
+# Example phrase-level stoplist for markdown_phrase_overlap.py
+# Lines starting with # are comments and ignored.
+# Phrases are normalized by lowercasing and collapsing whitespace.
+
+in this section
+in this document
+in this file
+the following sections
+the rest of this document
